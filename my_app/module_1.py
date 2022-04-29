@@ -2,7 +2,7 @@ import time
 from .api_utils import escape_hatch
 
 
-@escape_hatch(start_message="I'm an escape hatch")
+@escape_hatch(start_message="I'm an escape hatch", end_message="Function Finished")
 def function_that_runs_forever():
     """I'm a function that runs forever"""
 
