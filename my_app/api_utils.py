@@ -15,9 +15,11 @@ def escape_hatch(
 ):
     """Function to decorate API calls as an escape hatch
     Args:
-      method: method to be decorated
+      start_message (str): start message to show decorator started
+      end_message (str): end message to show decorator end
+      method: method to be decorated - the inner function
       keyboard_key (keyboard.Key or keyboard.KeyCode):
-    interrupt key to listen for
+    interrupt key to listen for, in our case is the escape key
       key_string (str): string representation of key to print in message"""
 
     def decorate(func):
